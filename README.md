@@ -4,4 +4,4 @@ Twitter で家計簿
 
 # Requirements
 
-- Redis
+hoge
