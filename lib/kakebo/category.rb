@@ -7,6 +7,10 @@ class Kakebo::Category
     find_by('categories', name: name).first
   end
 
+  def self.all
+    super('categories')
+  end
+
   def sheet_name
     'categories'
   end

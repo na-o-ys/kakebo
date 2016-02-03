@@ -68,6 +68,21 @@ module Kakebo::Storage::SpreadSheet
       rows.map { |row| new_by_row(row) }
     end
 
+    def find(sheet_name, &block)
+      sheet = agent.worksheet_by_title(sheet_name)
+      return [] unless sheet
+      sheet
+        .rows
+        .map { |r| new_by_row(r) }
+        .select { |r| block.call(r) }
+    end
+
+    def all(sheet_name)
+      sheet = agent.worksheet_by_title(sheet_name)
+      return [] unless sheet
+      sheet.rows.map { |row| new_by_row(row) }
+    end
+
     def new_by_row(row)
       attrs = columns
         .each_with_index
