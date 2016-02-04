@@ -16,4 +16,4 @@ class Kakebo::Report
   end
 end
 
-require 'kakebo/report/image.rb'
+require 'kakebo/report/image'

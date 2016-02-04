@@ -5,9 +5,9 @@ module Kakebo
 end
 
 $:.unshift(Kakebo.app_root + '/lib')
-require 'kakebo/config.rb'
-require 'kakebo/storage.rb'
-require 'kakebo/item.rb'
-require 'kakebo/category.rb'
-require 'kakebo/data_source.rb'
+require 'kakebo/config'
+require 'kakebo/storage'
+require 'kakebo/item'
+require 'kakebo/category'
+require 'kakebo/data_source'
 require 'kakebo/report'

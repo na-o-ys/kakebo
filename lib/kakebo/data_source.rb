@@ -1,4 +1,4 @@
 module Kakebo::DataSource
 end
 
-require 'kakebo/data_source/twitter.rb'
+require 'kakebo/data_source/twitter'

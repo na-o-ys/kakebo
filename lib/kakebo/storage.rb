@@ -1,4 +1,4 @@
 module Kakebo::Storage
 end
 
-require 'kakebo/storage/spread_sheet.rb'
+require 'kakebo/storage/spread_sheet'
